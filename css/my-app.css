@@ -108,7 +108,6 @@ body {
   box-sizing: border-box;
   border: 1px solid #ccc;
   border-radius: 2px;
-  overflow: show;
   height: 240px;
   border: none;
 }
@@ -119,7 +118,7 @@ body {
   font-size:21px;
 }
 .slider-container {
-  height: 300px;
+  height: 320px;
   margin: 35px 0;
   overflow: hidden;
   color: #666;
@@ -130,23 +129,38 @@ body {
   border: none;
   color: #222;font-weight: 400;
   font-size: 18px; 
-  padding: 0 0 20px 0;
-  border-radius: 0 0 4px 4px;
+  padding: 0 0 23px 0;
+  border-radius: 0 0 2px 2px;
   z-index: 1;
+}
+.slider-container .item_rating{
+  width: auto;
+  height: 20px;
+  line-height: 20px;
+  font-size: 20px;
+  /* right: 5%; */
+  /* top: -20px; */
+  background-color: none;
+  z-index: 1;
+  padding: 0 8px;
+  color: #ddd;
+  background-color: #fff;
+  text-align: right;
 }
 .bottom_bar i{
   display: inline-block;
   vertical-align: middle;
   position: relative;
-  width: 33%;
+  width: calc(33% - 3px);
   text-align: center;
-  font-size: 24px;
+  font-size: 21px;
   line-height: 60px;
   height: 60px;
-  color: #3b5998;
-  font-family: Roboto;
+  padding:0;margin: 0;
+  font-family: 'Roboto';
+  font-weight:300;
   color: #2d91f2;
-  border-right: 1px solid rgba(12,107,199,0.2);
+  border-right: 1px solid rgba(12,107,199,0.1);
 }
 .bottom_bar i .smalls{
   font-size: 14px;
@@ -155,11 +169,6 @@ body {
   font-weight: 100;
   display: inline-block;
   margin:0;
-}
-.fb_iframe_widget{
-  display: inline-block;
-  line-height: 60px;
-  height: 60px;
 }
 
 .background .item_title {
@@ -178,16 +187,7 @@ body {
   font-size: 18px;
   text-shadow: 0 0 1px #333;
 }
-.background .item_rating{
-  position: absolute;
-  width: 90%;height: 20px;
-  line-height: 20px;
-  font-size: 20px;
-  right: 5%;
-  background-color: none;
-  z-index: 1; color: #ddd;
-  text-align: right;
-}
+
 .background .bg_filter{
   position: absolute;
   width: 200%;height: 100%;
@@ -206,13 +206,17 @@ body {
   border: none;
   z-index: 0;
   opacity: 1;
-  overflow: show;
+  background-color: #fff;
 }
 #video_chat{
   width:250px;
   height:250px;
   position:fixed;
   bottom:0;right:0;
-  z-index:99;
+  z-index:100;
+  display: block;
+  background-color: #000;
   display: none;
+}
+
 }

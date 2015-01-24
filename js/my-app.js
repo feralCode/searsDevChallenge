@@ -45,8 +45,17 @@ myApp.onPageInit('Home', function (page) {
   console.log('Failed to get local stream' ,err);
 });*/
 
+var remoteWebRtcKey = 'ocfcqaz1in72p23';
+var peer = new Peer('wee5', { key: '1bti5w4jdcej0pb9', debug: 3, config: {'iceServers': [
+      { url: 'stun:stun.l.google.com:19302' } // Pass in optional STUN and TURN server for maximum network compatibility
+    ]}});
+    
+
+
+
 function requestVideo() {
-  navigator.getUserMedia({video: true, audio: false},
+
+  navigator.getUserMedia({video: true, audio: true},
                        getUserMediaOkCallback,
                        getUserMediaFailedCallback);
 }
@@ -57,8 +66,29 @@ function getUserMediaFailedCallback(error) {
 
 function getUserMediaOkCallback(stream) {
   // Call the polyfill wrapper to attach the media stream to this element.
-  attachMediaStream(document.getElementById("video_chat"), stream);
+  //attachMediaStream(document.getElementById("video_chat"), stream);
+
+  var call = peer.call(remoteWebRtcKey, stream);
+
+  call.on('stream', function(remoteStream) {
+    // `stream` is the MediaStream of the remote peer.
+    // Here you'd add it to an HTML video/canvas element.
+    //$$('#video_chat').prop('src', URL.createObjectURL(remoteStream));
+    $$('#video_chat').show();
+    attachMediaStream(document.getElementById("video_chat"), remoteStream);
+    //$$('#video_chat').prop('src', URL.createObjectURL(remoteStream));
+  });
+
+  $$('#video_chat').click(function() {
+    this.toggle();
+  });
+
+  peer.on('call', function(call) {
+    // Answer the call, providing our mediaStream
+    call.answer(stream);
+  });
 }
+
 
 
 
@@ -122,12 +152,12 @@ var process = function() {
 
   //$$('#main_content').append(itemListHtml);
 
-  //requestVideo();
+  requestVideo();
 };
 
 keyword = 'blazer';
 keywordSearch(keyword);
-keyword = 'refrigerator';
+keyword = 'appliances';
 keywordSearch(keyword);
 keyword = 'lawn';
 keywordSearch(keyword);

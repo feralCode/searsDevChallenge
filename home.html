@@ -23,15 +23,6 @@
   </head>
   <body>
 
-  <!-- facebook SDK -->
-  <div id="fb-root"></div>
-  <script>(function(d, s, id) {
-      var js, fjs = d.getElementsByTagName(s)[0];
-      if (d.getElementById(id)) return;
-      js = d.createElement(s); js.id = id;
-      js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&appId=281520535249034&version=v2.0";
-      fjs.parentNode.insertBefore(js, fjs);
-    }(document, 'script', 'facebook-jssdk'));</script>
 
     <!-- Status bar overlay for full screen mode (PhoneGap) -->
     <div class="statusbar-overlay"></div>
@@ -39,14 +30,15 @@
     <div class="views">
     <!-- Your main view, should have "view-main" class -->
     <div class="view view-main">
-        <video id="video_chat" autoplay="autoplay"></video>
+        <video id="video_chat" autoplay="autoplay" src=""></video>
 
         <!-- Pages -->
         <div class="pages">
           <!-- Home page -->
           <div class="page" data-page="index">
             <div class="page-content" id="main_content" 
-              style="margin-botton:80%;">
+              style="padding-botton:80%;">
+              
 
               <div class="help_loader"></div>
 
@@ -54,32 +46,30 @@
 
               <!-- Slider -->
               <script id="itemPreviewTemplate" type="text/template7">
-              <div class="content-block-title">Based off interest {{this.keyword}}</div>
+              <div class="content-block-title">{{this.keyword}}</div>
               <div class="slider-container {{this.keyword}}">
                 <div class="slider-wrapper" id="preview_container">
                   {{#each this.Products}}
                     <div class="slider-slide">
-                      
+                      <div class="item_rating">
+                        <i class="ion-ios-star-outline"></i>
+                        <i class="ion-ios-star-outline"></i>
+                        <i class="ion-ios-star-outline"></i>
+                        <i class="ion-ios-star-outline"></i>
+                        <i class="ion-ios-star-outline"></i>
+                      </div>
                       <div class="background" style="background-image: url('{{Description.ImageURL}}');">
-                        <div class="item_rating">
-                          <i class="ion-ios-star-outline"></i>
-                          <i class="ion-ios-star-outline"></i>
-                          <i class="ion-ios-star-outline"></i>
-                          <i class="ion-ios-star-outline"></i>
-                          <i class="ion-ios-star-outline"></i>
-                        </div>
                         <div class="item_title">{{Description.Name}}</div>
                         <div class="bg_filter"></div>
                       </div>
                       <div class="bottom_bar">
-                        <i class="ion-ios-cart" >Buy</i>
+                        <i class="ion-ios-cart">
+                          Buy
+                        </i>
                         <i class="" >
                           <span class="smalls">$</span>{{dollars}}<span class="smalls">{{cents}}</span>
                         </i>
-     
-                        <!-- <div class="fb-like" data-href="https://developers.facebook.com/docs/plugins/" data-layout="button" data-width="40" data-action="like" data-show-faces="false" data-share="false"></div>-->
-
-                        
+                        <i class="ion-android-share-alt"> Share</i>
                       </div>
                     </div>
                   {{/each}}
@@ -154,7 +144,8 @@
     </div><!--end of views-->
 
     <script type="text/javascript" src="//cdn.temasys.com.sg/adapterjs/0.10.x/adapter.min.js"></script>
-    <script src="http://cdn.peerjs.com/0.3/peer.js"></script>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
+    <script type="text/javascript" src="http://cdn.peerjs.com/0.3/peer.js"></script>
     <!-- cdn underscore js -->
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.7.0/underscore-min.js"></script>
     <!-- Path to Framework7 Library JS-->
