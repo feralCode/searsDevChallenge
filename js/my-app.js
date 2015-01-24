@@ -67,82 +67,67 @@ function getUserMediaOkCallback(stream) {
 ***********      JSONP to venicePeach     ************
 ======================================================
 */
-var results = {};
+var results = [];
+var keyword;
+$$('#main_content').html('');
 
+keyword = 'blazer';
 var keywordSearch = function(keyword) {
     var url = 'http://venicepeach.com/hack/sears/test.php?keyword=' + keyword + '&callback=?';
     //login request
     $$.ajax({
-        async: true,
+        async: false,
         url: url,
         crossDomain: true,
         timeout: 5000, //10 sec timeout for ajax
         success: function(response) {
-            results = JSON.parse(response);
-            results.keyword = keyword;
-            process();
+            var temp = JSON.parse(response);
+            temp.SearchResults.keyword = keyword;
+            results.push(temp);
         }
     });
 };
 
-keywordSearch('blazer');
-
 var process = function() {
-  var itemListHtml = '';
-  var previewSliderHtml = '';
-  console.log(results);
-  _.each(results.SearchResults.Products, function(item){
-      item.dollars = item.Price.DisplayPrice.split('.')[0] || '';
-      item.cents   = item.Price.DisplayPrice.split('.')[1] || '';
 
-      /*var tempObj = {
-        partNumber: (item.Id.PartNumber || false),
-        catEntryId: (item.Id.CatEntryId || false),
-        mfgPartNumber: (item.Id.MfgPartNumber || false),
-        name: (item.Description.Name || false),
-        brandName: (item.Description.BrandName || false),
-        imageURL: (item.Description.ImageURL || false),
-        displayPrice: (item.Price.DisplayPrice || false),
-        dollars: (dollars || false),
-        cents: (cents || false),
-        source: (item.Availability.Source || false)
-      };*/
-  });
-  itemListHtml = Template7.templates.itemListTemplate(results.SearchResults);
+  //console.log(results);
+  _.each(results, function(it) {
+    _.each(it.SearchResults.Products, function(item) {
+        item.dollars = item.Price.DisplayPrice.split('.')[0] || '';
+        item.cents   = item.Price.DisplayPrice.split('.')[1] || '';
+    });
 
+    var previewCategoryObject = it.SearchResults;
+    previewCategoryObject.Products = it.SearchResults.Products.slice(0,6);
 
-  _.each(results.SearchResults.Products.slice(0,5), function(item) {
-      console.log(item);
-      item.dollars = item.Price.DisplayPrice.split('.')[0] || '';
-      item.cents   = item.Price.DisplayPrice.split('.')[1] || '';
-
-      /*var tempObj = {
-        partNumber: (item.Id.PartNumber || false),
-        catEntryId: (item.Id.CatEntryId || false),
-        mfgPartNumber: (item.Id.MfgPartNumber || false),
-        name: (item.Description.Name || false),
-        brandName: (item.Description.BrandName || false),
-        imageURL: (item.Description.ImageURL || false),
-        displayPrice: (item.Price.DisplayPrice || false),
-        dollars: (dollars || false),
-        cents: (cents || false),
-        source: (item.Availability.Source || false)
-      };*/
-  });
-  previewSliderHtml = Template7.templates.itemPreviewTemplate(tempObj);
-
-  $$('#preview_container').html(previewSliderHtml);
-  // Init slider and store its instance in mySlider variable
-    var mySlider = myApp.slider('.slider-container', {
+    var previewSliderHtml = Template7.templates.itemPreviewTemplate(previewCategoryObject);
+    console.log(previewCategoryObject);
+    $$('#main_content').append(previewSliderHtml);
+    // Init slider and store its instance in mySlider variable
+    var selectorString = '.slider-container.' + it.SearchResults.keyword;
+    myApp.slider(selectorString, {
       pagination:'.slider-pagination',
       spaceBetween: 20,
       slidesPerView: 1.2,
       loop: true
     });
 
+  });
+  //$$('#main_content').append(previewSliderHtml);
+  //itemListHtml = Template7.templates.itemListTemplate(results.SearchResults);
 
 
-  $$('#list_container').html(itemListHtml);
+  
 
-  requestVideo();
+  //$$('#main_content').append(itemListHtml);
+
+  //requestVideo();
 };
+
+keyword = 'blazer';
+keywordSearch(keyword);
+keyword = 'refrigerator';
+keywordSearch(keyword);
+keyword = 'lawn';
+keywordSearch(keyword);
+process();

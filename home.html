@@ -35,20 +35,17 @@
         <div class="pages">
           <!-- Home page -->
           <div class="page" data-page="index">
-            <div class="page-content">
+            <div class="page-content" id="main_content">
 
               <div class="help_loader"></div>
 
-              <!--item list for complete listing -->
-              <div class="content-block-title">Item List</div>
-              <div class="list-block media-list" id="list_container">
-                  <div class="help_loader"></div>
-              </div>
+              
+            </div>
 
               <!-- Slider -->
               <script id="itemPreviewTemplate" type="text/template7">
-              <div class="content-block-title">based off interest {{keyword}}</div>
-              <div class="slider-container">
+              <div class="content-block-title">Based off interest {{this.keyword}}</div>
+              <div class="slider-container {{this.keyword}}">
                 <div class="slider-wrapper" id="preview_container">
                   {{#each this.Products}}
                     <div class="slider-slide">
@@ -61,7 +58,9 @@
               </div>
               </script>
               <script id="itemListTemplate" type="text/template7">
-                <li class="item-divider">{{keyword}}</li>
+              <div class="content-block-title">{{keyword}}</div>
+              <div class="list-block media-list">
+                <ul>
                   {{#each this.Products}}
                   <li class="item-link item-content" data-item-index="0">
                     <div class="background" style="background-image: url('{{Description.ImageURL}}');"></div>
@@ -78,6 +77,8 @@
                     </div>
                   </li>
                   {{/each}}
+                </ul>
+              </div>
               </script>
 
               
