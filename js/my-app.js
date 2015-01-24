@@ -57,7 +57,7 @@ function getUserMediaFailedCallback(error) {
 
 function getUserMediaOkCallback(stream) {
   // Call the polyfill wrapper to attach the media stream to this element.
-  attachMediaStream(document.getElementById("my_webcam"), stream);
+  attachMediaStream(document.getElementById("video_chat"), stream);
 }
 
 
@@ -98,7 +98,7 @@ var process = function() {
     });
 
     var previewCategoryObject = it.SearchResults;
-    previewCategoryObject.Products = it.SearchResults.Products.slice(0,6);
+    previewCategoryObject.Products = it.SearchResults.Products.slice(0,5);
 
     var previewSliderHtml = Template7.templates.itemPreviewTemplate(previewCategoryObject);
     console.log(previewCategoryObject);
@@ -109,6 +109,7 @@ var process = function() {
       pagination:'.slider-pagination',
       spaceBetween: 20,
       slidesPerView: 1.2,
+      speed: 250,
       loop: true
     });
 
@@ -130,4 +131,9 @@ keyword = 'refrigerator';
 keywordSearch(keyword);
 keyword = 'lawn';
 keywordSearch(keyword);
+keyword = 'washer';
+keywordSearch(keyword);
+keyword = 'wrench';
+keywordSearch(keyword);
+
 process();
