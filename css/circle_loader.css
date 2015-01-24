@@ -1,0 +1,23 @@
+
+/*help*/
+.help_loader{
+    width: 80px;
+    height: 80px;
+    border: 2px #fff solid;
+    border-radius: 50%;
+    -webkit-animation: rotation 1s ease-in-out infinite;
+    margin: 30px auto;
+}
+.help_loader:after{
+    width: 10px;
+    height: 10px;
+    background-color: rgba(255,255,255,1);
+    border-radius: 100%;
+    position: absolute;
+    left:40px;
+    content: "";
+}
+@-webkit-keyframes rotation{
+    0%{transform: rotate(0deg);}
+    100%{transform: rotate(360deg);}
+}

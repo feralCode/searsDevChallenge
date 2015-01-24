@@ -1,0 +1,1328 @@
+{
+  "SearchResults": {
+    "ProductCount": "276",
+    "Products": [
+      {
+        "Id": {
+          "PartNumber": "007VA78942412P",
+          "CatEntryId": "44839264",
+          "MfgPartNumber": "WS5MT78061MI"
+        },
+        "Description": {
+          "Name": "Metaphor Women's Knit Blazer",
+          "BrandName": "Metaphor",
+          "ImageURL": "http://c.shld.net/rpx/i/s/i/spin/image/spin_prod_1154387712",
+          "PbType": "VARIATION",
+          "ReviewRating": {}
+        },
+        "Price": {
+          "DisplayPrice": "24.99",
+          "ClearanceIndicator": "0",
+          "PromoInd": "1",
+          "IsZipCodeRequired": "false",
+          "ShowAKHIMessage": "true"
+        },
+        "Availability": {
+          "StockIndicator": "1",
+          "Source": "Online",
+          "SpuInd": "true",
+          "FreeShippingEligible": "True",
+          "FreeShippingThreshold": "59"
+        },
+        "SellerInfo": {
+          "StoreOrigin": "S",
+          "SellerCount": "1"
+        },
+        "Fulfillment": {
+          "DefaultFullfillment": "TW",
+          "DirectDelivery": "false"
+        },
+        "OtherInfo": {
+          "BeanType": "ProductBean",
+          "AutomotiveDivision": "false",
+          "NewBundleExperience": "No"
+        }
+      },
+      {
+        "Id": {
+          "PartNumber": "042VA78642012P",
+          "CatEntryId": "2979633",
+          "MfgPartNumber": "ALW3135J"
+        },
+        "Description": {
+          "Name": "Adam Levine Little Black Blazer",
+          "BrandName": "Adam Levine",
+          "ImageURL": "http://c.shld.net/rpx/i/s/i/spin/image/spin_prod_1127692312",
+          "PbType": "VARIATION",
+          "ReviewRating": {}
+        },
+        "Price": {
+          "CutPrice": "29.99",
+          "DisplayPrice": "11.99",
+          "ClearanceIndicator": "0",
+          "PromoInd": "1",
+          "IsZipCodeRequired": "false",
+          "ShowAKHIMessage": "true"
+        },
+        "Availability": {
+          "SaleIndicator": "1",
+          "StockIndicator": "1",
+          "Source": "Online",
+          "SpuInd": "true",
+          "ResInd": "1",
+          "FreeShippingEligible": "True",
+          "FreeShippingThreshold": "59"
+        },
+        "SellerInfo": {
+          "StoreOrigin": "K",
+          "SellerCount": "1"
+        },
+        "Fulfillment": {
+          "IntShipEligible": "1"
+        },
+        "OtherInfo": {
+          "BeanType": "ProductBean",
+          "AutomotiveDivision": "false",
+          "NewBundleExperience": "No"
+        }
+      },
+      {
+        "Id": {
+          "PartNumber": "041VA78931612P",
+          "CatEntryId": "44836271",
+          "MfgPartNumber": "DAN401J729"
+        },
+        "Description": {
+          "Name": "U.S. Polo Assn. Men's Tweed Blazer",
+          "BrandName": "U.S. Polo Assn.",
+          "ImageURL": "http://c.shld.net/rpx/i/s/i/spin/image/spin_prod_1141875412",
+          "PbType": "VARIATION",
+          "ReviewRating": {}
+        },
+        "Price": {
+          "CutPrice": "140.00",
+          "DisplayPrice": "54.99",
+          "ClearanceIndicator": "0",
+          "PromoInd": "1",
+          "IsZipCodeRequired": "false",
+          "ShowAKHIMessage": "true"
+        },
+        "Availability": {
+          "SaleIndicator": "1",
+          "StockIndicator": "1",
+          "Source": "Online",
+          "SpuInd": "true",
+          "FreeShippingEligible": "True",
+          "FreeShippingThreshold": "59"
+        },
+        "SellerInfo": {
+          "StoreOrigin": "S",
+          "SellerCount": "1"
+        },
+        "Fulfillment": {
+          "DefaultFullfillment": "TW",
+          "DirectDelivery": "false"
+        },
+        "OtherInfo": {
+          "BeanType": "ProductBean",
+          "AutomotiveDivision": "false",
+          "NewBundleExperience": "No"
+        }
+      },
+      {
+        "Id": {
+          "PartNumber": "016VA71620312P",
+          "CatEntryId": "44378114",
+          "MfgPartNumber": "6257WK2BR"
+        },
+        "Description": {
+          "Name": "Briggs Women's Plus Tweed-Look Blazer",
+          "BrandName": "Briggs",
+          "ImageURL": "http://c.shld.net/rpx/i/s/i/spin/image/spin_prod_939071012",
+          "PbType": "VARIATION",
+          "ReviewRating": {}
+        },
+        "Price": {
+          "CutPrice": "58.00",
+          "DisplayPrice": "33.06",
+          "ClearanceIndicator": "0",
+          "PromoInd": "1",
+          "IsZipCodeRequired": "false",
+          "ShowAKHIMessage": "true"
+        },
+        "Availability": {
+          "SaleIndicator": "1",
+          "StockIndicator": "1",
+          "Source": "Online",
+          "StsType": "DRES",
+          "FreeShippingEligible": "True",
+          "FreeShippingThreshold": "59"
+        },
+        "SellerInfo": {
+          "StoreOrigin": "S",
+          "SellerCount": "1"
+        },
+        "Fulfillment": {
+          "DefaultFullfillment": "TW",
+          "DirectDelivery": "false",
+          "IntShipEligible": "1"
+        },
+        "OtherInfo": {
+          "BeanType": "ProductBean",
+          "AutomotiveDivision": "false",
+          "NewBundleExperience": "No"
+        }
+      },
+      {
+        "Id": {
+          "PartNumber": "041VA78931312P",
+          "CatEntryId": "44836288",
+          "MfgPartNumber": "CAL301J001"
+        },
+        "Description": {
+          "Name": "U.S. Polo Assn. Men's Corduroy Blazer",
+          "BrandName": "U.S. Polo Assn.",
+          "ImageURL": "http://c.shld.net/rpx/i/s/i/spin/image/spin_prod_1141876612",
+          "PbType": "VARIATION",
+          "ReviewRating": {}
+        },
+        "Price": {
+          "CutPrice": "140.00",
+          "DisplayPrice": "54.99",
+          "ClearanceIndicator": "0",
+          "PromoInd": "1",
+          "IsZipCodeRequired": "false",
+          "ShowAKHIMessage": "true"
+        },
+        "Availability": {
+          "SaleIndicator": "1",
+          "StockIndicator": "1",
+          "Source": "Online",
+          "SpuInd": "true",
+          "FreeShippingEligible": "True",
+          "FreeShippingThreshold": "59"
+        },
+        "SellerInfo": {
+          "StoreOrigin": "S",
+          "SellerCount": "1"
+        },
+        "Fulfillment": {
+          "DefaultFullfillment": "TW",
+          "DirectDelivery": "false"
+        },
+        "OtherInfo": {
+          "BeanType": "ProductBean",
+          "AutomotiveDivision": "false",
+          "NewBundleExperience": "No"
+        }
+      },
+      {
+        "Id": {
+          "PartNumber": "007VA76909512P",
+          "CatEntryId": "44653897",
+          "MfgPartNumber": "WH4MT77020MI"
+        },
+        "Description": {
+          "Name": "Metaphor Women's Open Front Blazer",
+          "BrandName": "Metaphor",
+          "ImageURL": "http://c.shld.net/rpx/i/s/i/spin/image/spin_prod_1086997412",
+          "PbType": "VARIATION",
+          "ReviewRating": {}
+        },
+        "Price": {
+          "CutPrice": "48.00",
+          "DisplayPrice": "24.00",
+          "ClearanceIndicator": "0",
+          "PromoInd": "1",
+          "IsZipCodeRequired": "false",
+          "ShowAKHIMessage": "true"
+        },
+        "Availability": {
+          "SaleIndicator": "1",
+          "StockIndicator": "1",
+          "Source": "Online",
+          "SpuInd": "true",
+          "FreeShippingEligible": "True",
+          "FreeShippingThreshold": "59"
+        },
+        "SellerInfo": {
+          "StoreOrigin": "S",
+          "SellerCount": "1"
+        },
+        "Fulfillment": {
+          "DefaultFullfillment": "TW",
+          "DirectDelivery": "false"
+        },
+        "OtherInfo": {
+          "BeanType": "ProductBean",
+          "AutomotiveDivision": "false",
+          "NewBundleExperience": "No"
+        }
+      },
+      {
+        "Id": {
+          "PartNumber": "042VA78545312P",
+          "CatEntryId": "2975700",
+          "MfgPartNumber": "NMJ-046-N"
+        },
+        "Description": {
+          "Name": "Nicki Minaj Women's Cropped Blazer",
+          "BrandName": "Nicki Minaj",
+          "ImageURL": "http://c.shld.net/rpx/i/s/i/spin/image/spin_prod_1132662912",
+          "PbType": "VARIATION",
+          "ReviewRating": {
+            "Rating": "4.5",
+            "NumReview": "3"
+          }
+        },
+        "Price": {
+          "CutPrice": "36.99",
+          "DisplayPrice": "16.64",
+          "ClearanceIndicator": "0",
+          "PromoInd": "1",
+          "IsZipCodeRequired": "false",
+          "ShowAKHIMessage": "true"
+        },
+        "Availability": {
+          "SaleIndicator": "1",
+          "StockIndicator": "1",
+          "Source": "Online",
+          "SpuInd": "true",
+          "ResInd": "1",
+          "FreeShippingEligible": "True",
+          "FreeShippingThreshold": "59"
+        },
+        "SellerInfo": {
+          "StoreOrigin": "K",
+          "SellerCount": "1"
+        },
+        "Fulfillment": {
+          "IntShipEligible": "1"
+        },
+        "OtherInfo": {
+          "BeanType": "ProductBean",
+          "AutomotiveDivision": "false",
+          "NewBundleExperience": "No"
+        }
+      },
+      {
+        "Id": {
+          "PartNumber": "016VA76081212P",
+          "CatEntryId": "44613394",
+          "MfgPartNumber": "845A989P-SEARS"
+        },
+        "Description": {
+          "Name": "Covington Petite's Button-Front Blazer",
+          "BrandName": "Covington",
+          "ImageURL": "http://c.shld.net/rpx/i/s/i/spin/image/spin_prod_1029034512",
+          "PbType": "VARIATION",
+          "ReviewRating": {}
+        },
+        "Price": {
+          "CutPrice": "60.00",
+          "DisplayPrice": "30.00",
+          "ClearanceIndicator": "0",
+          "PromoInd": "1",
+          "IsZipCodeRequired": "false",
+          "ShowAKHIMessage": "true"
+        },
+        "Availability": {
+          "SaleIndicator": "1",
+          "StockIndicator": "1",
+          "Source": "Online",
+          "SpuInd": "true",
+          "StsType": "DRES",
+          "ResInd": "1",
+          "FreeShippingEligible": "True",
+          "FreeShippingThreshold": "59"
+        },
+        "SellerInfo": {
+          "StoreOrigin": "S",
+          "SellerCount": "1"
+        },
+        "Fulfillment": {
+          "DefaultFullfillment": "TW",
+          "DirectDelivery": "false"
+        },
+        "OtherInfo": {
+          "BeanType": "ProductBean",
+          "AutomotiveDivision": "false",
+          "NewBundleExperience": "No"
+        }
+      },
+      {
+        "Id": {
+          "PartNumber": "007VA79130112P",
+          "CatEntryId": "44850642",
+          "MfgPartNumber": "WH4MT78022MI"
+        },
+        "Description": {
+          "Name": "Metaphor Women's Open-Front Blazer",
+          "BrandName": "Metaphor",
+          "ImageURL": "http://c.shld.net/rpx/i/s/i/spin/image/spin_prod_1166122412",
+          "PbType": "VARIATION",
+          "ReviewRating": {}
+        },
+        "Price": {
+          "CutPrice": "60.00",
+          "DisplayPrice": "30.00",
+          "ClearanceIndicator": "0",
+          "PromoInd": "1",
+          "IsZipCodeRequired": "false",
+          "ShowAKHIMessage": "true"
+        },
+        "Availability": {
+          "SaleIndicator": "1",
+          "StockIndicator": "1",
+          "Source": "Online",
+          "SpuInd": "true",
+          "FreeShippingEligible": "True",
+          "FreeShippingThreshold": "59"
+        },
+        "SellerInfo": {
+          "StoreOrigin": "S",
+          "SellerCount": "1"
+        },
+        "Fulfillment": {
+          "DefaultFullfillment": "TW",
+          "DirectDelivery": "false"
+        },
+        "OtherInfo": {
+          "BeanType": "ProductBean",
+          "AutomotiveDivision": "false",
+          "NewBundleExperience": "No"
+        }
+      },
+      {
+        "Id": {
+          "PartNumber": "007VA78548712P",
+          "CatEntryId": "44805889",
+          "MfgPartNumber": "43726"
+        },
+        "Description": {
+          "Name": "Kardashian Kollection Women's Cropped Peplum Blazer",
+          "BrandName": "Kardashian Kollection",
+          "ImageURL": "http://c.shld.net/rpx/i/s/i/spin/image/spin_prod_1117678412",
+          "PbType": "VARIATION",
+          "ReviewRating": {}
+        },
+        "Price": {
+          "CutPrice": "99.00",
+          "DisplayPrice": "39.60",
+          "ClearanceIndicator": "0",
+          "PromoInd": "1",
+          "IsZipCodeRequired": "false",
+          "ShowAKHIMessage": "true"
+        },
+        "Availability": {
+          "SaleIndicator": "1",
+          "StockIndicator": "1",
+          "Source": "Online",
+          "SpuInd": "true",
+          "StsType": "DRES",
+          "ResInd": "1",
+          "FreeShippingEligible": "True",
+          "FreeShippingThreshold": "59"
+        },
+        "SellerInfo": {
+          "StoreOrigin": "S",
+          "SellerCount": "1"
+        },
+        "Fulfillment": {
+          "DefaultFullfillment": "TW",
+          "DirectDelivery": "false",
+          "IntShipEligible": "1"
+        },
+        "OtherInfo": {
+          "BeanType": "ProductBean",
+          "AutomotiveDivision": "false",
+          "NewBundleExperience": "No"
+        }
+      },
+      {
+        "Id": {
+          "PartNumber": "007VA74314612P",
+          "CatEntryId": "44533671",
+          "MfgPartNumber": "42740"
+        },
+        "Description": {
+          "Name": "Kardashian Kollection Women's Textured Blazer",
+          "BrandName": "Kardashian Kollection",
+          "ImageURL": "http://c.shld.net/rpx/i/s/i/spin/image/spin_prod_980925012",
+          "PbType": "VARIATION",
+          "ReviewRating": {}
+        },
+        "Price": {
+          "DisplayPrice": "99.00",
+          "ClearanceIndicator": "0",
+          "PromoInd": "1",
+          "IsZipCodeRequired": "false",
+          "ShowAKHIMessage": "true"
+        },
+        "Availability": {
+          "StockIndicator": "1",
+          "Source": "Online",
+          "StsType": "DRES",
+          "FreeShippingEligible": "True",
+          "FreeShippingThreshold": "59"
+        },
+        "SellerInfo": {
+          "StoreOrigin": "S",
+          "SellerCount": "1"
+        },
+        "Fulfillment": {
+          "DefaultFullfillment": "TW",
+          "DirectDelivery": "false",
+          "IntShipEligible": "1"
+        },
+        "OtherInfo": {
+          "BeanType": "ProductBean",
+          "AutomotiveDivision": "false",
+          "NewBundleExperience": "No"
+        }
+      },
+      {
+        "Id": {
+          "PartNumber": "016VA76609112P",
+          "CatEntryId": "44636221",
+          "MfgPartNumber": "2487WK2BR"
+        },
+        "Description": {
+          "Name": "Briggs Women's Plus Blazer",
+          "BrandName": "Briggs",
+          "ImageURL": "http://c.shld.net/rpx/i/s/i/spin/image/spin_prod_1038949312",
+          "PbType": "VARIATION",
+          "ReviewRating": {}
+        },
+        "Price": {
+          "CutPrice": "52.00",
+          "DisplayPrice": "29.64",
+          "ClearanceIndicator": "0",
+          "PromoInd": "1",
+          "IsZipCodeRequired": "false",
+          "ShowAKHIMessage": "true"
+        },
+        "Availability": {
+          "SaleIndicator": "1",
+          "StockIndicator": "1",
+          "Source": "Online",
+          "SpuInd": "true",
+          "StsType": "DRES",
+          "ResInd": "1",
+          "FreeShippingEligible": "True",
+          "FreeShippingThreshold": "59"
+        },
+        "SellerInfo": {
+          "StoreOrigin": "S",
+          "SellerCount": "1"
+        },
+        "Fulfillment": {
+          "DefaultFullfillment": "TW",
+          "DirectDelivery": "false",
+          "IntShipEligible": "1"
+        },
+        "OtherInfo": {
+          "BeanType": "ProductBean",
+          "AutomotiveDivision": "false",
+          "NewBundleExperience": "No"
+        }
+      },
+      {
+        "Id": {
+          "PartNumber": "007VA78548112P",
+          "CatEntryId": "44806201",
+          "MfgPartNumber": "43726"
+        },
+        "Description": {
+          "Name": "Kardashian Kollection Women's Cropped Peplum Blazer",
+          "BrandName": "Kardashian Kollection",
+          "ImageURL": "http://c.shld.net/rpx/i/s/i/spin/image/spin_prod_1117677012",
+          "PbType": "VARIATION",
+          "ReviewRating": {}
+        },
+        "Price": {
+          "CutPrice": "99.00",
+          "DisplayPrice": "39.60",
+          "ClearanceIndicator": "0",
+          "PromoInd": "1",
+          "IsZipCodeRequired": "false",
+          "ShowAKHIMessage": "true"
+        },
+        "Availability": {
+          "SaleIndicator": "1",
+          "StockIndicator": "1",
+          "Source": "Online",
+          "SpuInd": "true",
+          "StsType": "DRES",
+          "ResInd": "1",
+          "FreeShippingEligible": "True",
+          "FreeShippingThreshold": "59"
+        },
+        "SellerInfo": {
+          "StoreOrigin": "S",
+          "SellerCount": "1"
+        },
+        "Fulfillment": {
+          "DefaultFullfillment": "TW",
+          "DirectDelivery": "false",
+          "IntShipEligible": "1"
+        },
+        "OtherInfo": {
+          "BeanType": "ProductBean",
+          "AutomotiveDivision": "false",
+          "NewBundleExperience": "No"
+        }
+      },
+      {
+        "Id": {
+          "PartNumber": "007VA74314412P",
+          "CatEntryId": "44532729",
+          "MfgPartNumber": "42740"
+        },
+        "Description": {
+          "Name": "Kardashian Kollection Women's Textured Blazer - Neon",
+          "BrandName": "Kardashian Kollection",
+          "ImageURL": "http://c.shld.net/rpx/i/s/i/spin/image/spin_prod_980910012",
+          "PbType": "VARIATION",
+          "ReviewRating": {}
+        },
+        "Price": {
+          "DisplayPrice": "99.00",
+          "ClearanceIndicator": "0",
+          "PromoInd": "1",
+          "IsZipCodeRequired": "false",
+          "ShowAKHIMessage": "true"
+        },
+        "Availability": {
+          "StockIndicator": "1",
+          "Source": "Online",
+          "StsType": "DRES",
+          "FreeShippingEligible": "True",
+          "FreeShippingThreshold": "59"
+        },
+        "SellerInfo": {
+          "StoreOrigin": "S",
+          "SellerCount": "1"
+        },
+        "Fulfillment": {
+          "DefaultFullfillment": "TW",
+          "DirectDelivery": "false",
+          "IntShipEligible": "1"
+        },
+        "OtherInfo": {
+          "BeanType": "ProductBean",
+          "AutomotiveDivision": "false",
+          "NewBundleExperience": "No"
+        }
+      },
+      {
+        "Id": {
+          "PartNumber": "3ZZVA57664312P",
+          "CatEntryId": "43894802",
+          "MfgPartNumber": "6500 010 22 R"
+        },
+        "Description": {
+          "Name": "Edwards Women's Polyester Blazer",
+          "BrandName": "Edwards",
+          "ImageURL": "http://c.shld.net/rpx/i/s/i/spin/image/spin_prod_841384912",
+          "PbType": "VARIATION",
+          "ReviewRating": {}
+        },
+        "Price": {
+          "CutPrice": "80.00",
+          "DisplayPrice": "72.00",
+          "ClearanceIndicator": "0",
+          "PromoInd": "1",
+          "IsZipCodeRequired": "false",
+          "ShowAKHIMessage": "true"
+        },
+        "Availability": {
+          "StockIndicator": "1",
+          "Source": "Online",
+          "SpuInd": "true",
+          "StsType": "VRES",
+          "ResInd": "1",
+          "FreeShippingEligible": "True",
+          "FreeShippingThreshold": "59"
+        },
+        "SellerInfo": {
+          "StoreOrigin": "S",
+          "SellerCount": "1"
+        },
+        "Fulfillment": {
+          "DefaultFullfillment": "VD",
+          "DirectDelivery": "false",
+          "IntShipEligible": "1"
+        },
+        "OtherInfo": {
+          "BeanType": "ProductBean",
+          "AutomotiveDivision": "false",
+          "NewBundleExperience": "No"
+        }
+      },
+      {
+        "Id": {
+          "PartNumber": "007VA80316512P",
+          "CatEntryId": "44932916",
+          "MfgPartNumber": "WS5MT77053MI"
+        },
+        "Description": {
+          "Name": "Metaphor Women's Open-Front Jacquard Blazer",
+          "BrandName": "Metaphor",
+          "ImageURL": "http://c.shld.net/rpx/i/s/i/spin/image/spin_prod_1241094912",
+          "PbType": "VARIATION",
+          "ReviewRating": {}
+        },
+        "Price": {
+          "CutPrice": "60.00",
+          "DisplayPrice": "42.00",
+          "ClearanceIndicator": "0",
+          "PromoInd": "1",
+          "IsZipCodeRequired": "false",
+          "ShowAKHIMessage": "true"
+        },
+        "Availability": {
+          "SaleIndicator": "1",
+          "StockIndicator": "1",
+          "Source": "Online",
+          "SpuInd": "true",
+          "FreeShippingEligible": "True",
+          "FreeShippingThreshold": "59"
+        },
+        "SellerInfo": {
+          "StoreOrigin": "S",
+          "SellerCount": "1"
+        },
+        "Fulfillment": {
+          "DefaultFullfillment": "TW",
+          "DirectDelivery": "false"
+        },
+        "OtherInfo": {
+          "BeanType": "ProductBean",
+          "AutomotiveDivision": "false",
+          "NewBundleExperience": "No"
+        }
+      },
+      {
+        "Id": {
+          "PartNumber": "3ZZVA71189812P",
+          "CatEntryId": "44359371",
+          "MfgPartNumber": "C8102J"
+        },
+        "Description": {
+          "Name": "Adolfo Men's Two-button Navy Blazer - Online Exclusive",
+          "BrandName": "Adolfo",
+          "ImageURL": "http://c.shld.net/rpx/i/s/i/spin/image/spin_prod_933415612",
+          "PbType": "VARIATION",
+          "ReviewRating": {}
+        },
+        "Price": {
+          "CutPrice": "179.99",
+          "DisplayPrice": "74.99",
+          "ClearanceIndicator": "0",
+          "PromoInd": "1",
+          "IsZipCodeRequired": "false",
+          "ShowAKHIMessage": "true"
+        },
+        "Availability": {
+          "SaleIndicator": "1",
+          "StockIndicator": "1",
+          "Source": "Online",
+          "SpuInd": "true",
+          "StsType": "VRES",
+          "ResInd": "1",
+          "FreeShippingEligible": "True",
+          "FreeShippingThreshold": "59"
+        },
+        "SellerInfo": {
+          "StoreOrigin": "S",
+          "SellerCount": "1"
+        },
+        "Fulfillment": {
+          "DefaultFullfillment": "VD",
+          "DirectDelivery": "false",
+          "IntShipEligible": "1"
+        },
+        "OtherInfo": {
+          "BeanType": "ProductBean",
+          "AutomotiveDivision": "false",
+          "NewBundleExperience": "No"
+        }
+      },
+      {
+        "Id": {
+          "PartNumber": "3ZZVA57665212P",
+          "CatEntryId": "43896889",
+          "MfgPartNumber": "6500 012 26 R"
+        },
+        "Description": {
+          "Name": "Edwards Women's Polyester Blazer",
+          "BrandName": "Edwards",
+          "ImageURL": "http://c.shld.net/rpx/i/s/i/spin/image/spin_prod_841389612",
+          "PbType": "VARIATION",
+          "ReviewRating": {}
+        },
+        "Price": {
+          "CutPrice": "80.00",
+          "DisplayPrice": "72.00",
+          "ClearanceIndicator": "0",
+          "PromoInd": "1",
+          "IsZipCodeRequired": "false",
+          "ShowAKHIMessage": "true"
+        },
+        "Availability": {
+          "StockIndicator": "1",
+          "Source": "Online",
+          "SpuInd": "true",
+          "StsType": "VRES",
+          "ResInd": "1",
+          "FreeShippingEligible": "True",
+          "FreeShippingThreshold": "59"
+        },
+        "SellerInfo": {
+          "StoreOrigin": "S",
+          "SellerCount": "1"
+        },
+        "Fulfillment": {
+          "DefaultFullfillment": "VD",
+          "DirectDelivery": "false",
+          "IntShipEligible": "1"
+        },
+        "OtherInfo": {
+          "BeanType": "ProductBean",
+          "AutomotiveDivision": "false",
+          "NewBundleExperience": "No"
+        }
+      },
+      {
+        "Id": {
+          "PartNumber": "016VA80140412P",
+          "CatEntryId": "44921305",
+          "MfgPartNumber": "WS5CV17030PT"
+        },
+        "Description": {
+          "Name": "Covington Women's Petite Fitted Blazer",
+          "BrandName": "Covington",
+          "ImageURL": "http://c.shld.net/rpx/i/s/i/spin/image/spin_prod_1225256412",
+          "PbType": "VARIATION",
+          "ReviewRating": {}
+        },
+        "Price": {
+          "CutPrice": "60.00",
+          "DisplayPrice": "30.00",
+          "ClearanceIndicator": "0",
+          "PromoInd": "1",
+          "IsZipCodeRequired": "false",
+          "ShowAKHIMessage": "true"
+        },
+        "Availability": {
+          "SaleIndicator": "1",
+          "StockIndicator": "1",
+          "Source": "Online",
+          "SpuInd": "true",
+          "FreeShippingEligible": "True",
+          "FreeShippingThreshold": "59"
+        },
+        "SellerInfo": {
+          "StoreOrigin": "S",
+          "SellerCount": "1"
+        },
+        "Fulfillment": {
+          "DefaultFullfillment": "TW",
+          "DirectDelivery": "false"
+        },
+        "OtherInfo": {
+          "BeanType": "ProductBean",
+          "AutomotiveDivision": "false",
+          "NewBundleExperience": "No"
+        }
+      },
+      {
+        "Id": {
+          "PartNumber": "045VA80140212P",
+          "CatEntryId": "44921165",
+          "MfgPartNumber": "10ST2721"
+        },
+        "Description": {
+          "Name": "Structure Men's Wool Gabardine Blazer",
+          "BrandName": "Structure",
+          "ImageURL": "http://c.shld.net/rpx/i/s/i/spin/image/spin_prod_1221248912",
+          "PbType": "VARIATION",
+          "ReviewRating": {}
+        },
+        "Price": {
+          "CutPrice": "250.00",
+          "DisplayPrice": "175.00",
+          "ClearanceIndicator": "0",
+          "PromoInd": "1",
+          "IsZipCodeRequired": "false",
+          "ShowAKHIMessage": "true"
+        },
+        "Availability": {
+          "SaleIndicator": "1",
+          "StockIndicator": "1",
+          "Source": "Online",
+          "SpuInd": "true",
+          "FreeShippingEligible": "True",
+          "FreeShippingThreshold": "59"
+        },
+        "SellerInfo": {
+          "StoreOrigin": "S",
+          "SellerCount": "1"
+        },
+        "Fulfillment": {
+          "DefaultFullfillment": "TW",
+          "DirectDelivery": "false"
+        },
+        "OtherInfo": {
+          "BeanType": "ProductBean",
+          "AutomotiveDivision": "false",
+          "NewBundleExperience": "No"
+        }
+      },
+      {
+        "Id": {
+          "PartNumber": "3ZZVA57663012P",
+          "CatEntryId": "43912909",
+          "MfgPartNumber": "6500 017 26 R"
+        },
+        "Description": {
+          "Name": "Edwards Women's Polyester Blazer",
+          "BrandName": "Edwards",
+          "ImageURL": "http://c.shld.net/rpx/i/s/i/spin/image/spin_prod_841373012",
+          "PbType": "VARIATION",
+          "ReviewRating": {}
+        },
+        "Price": {
+          "CutPrice": "67.00",
+          "DisplayPrice": "60.30",
+          "ClearanceIndicator": "0",
+          "PromoInd": "1",
+          "IsZipCodeRequired": "false",
+          "ShowAKHIMessage": "true"
+        },
+        "Availability": {
+          "StockIndicator": "1",
+          "Source": "Online",
+          "SpuInd": "true",
+          "StsType": "VRES",
+          "ResInd": "1",
+          "FreeShippingEligible": "True",
+          "FreeShippingThreshold": "59"
+        },
+        "SellerInfo": {
+          "StoreOrigin": "S",
+          "SellerCount": "1"
+        },
+        "Fulfillment": {
+          "DefaultFullfillment": "VD",
+          "DirectDelivery": "false",
+          "IntShipEligible": "1"
+        },
+        "OtherInfo": {
+          "BeanType": "ProductBean",
+          "AutomotiveDivision": "false",
+          "NewBundleExperience": "No"
+        }
+      },
+      {
+        "Id": {
+          "PartNumber": "3ZZVA57662212P",
+          "CatEntryId": "43896879",
+          "MfgPartNumber": "6500 013 22 R"
+        },
+        "Description": {
+          "Name": "Edwards Women's Polyester Blazer",
+          "BrandName": "Edwards",
+          "ImageURL": "http://c.shld.net/rpx/i/s/i/spin/image/spin_prod_841369712",
+          "PbType": "VARIATION",
+          "ReviewRating": {}
+        },
+        "Price": {
+          "CutPrice": "80.00",
+          "DisplayPrice": "72.00",
+          "ClearanceIndicator": "0",
+          "PromoInd": "1",
+          "IsZipCodeRequired": "false",
+          "ShowAKHIMessage": "true"
+        },
+        "Availability": {
+          "StockIndicator": "1",
+          "Source": "Online",
+          "SpuInd": "true",
+          "StsType": "VRES",
+          "ResInd": "1",
+          "FreeShippingEligible": "True",
+          "FreeShippingThreshold": "59"
+        },
+        "SellerInfo": {
+          "StoreOrigin": "S",
+          "SellerCount": "1"
+        },
+        "Fulfillment": {
+          "DefaultFullfillment": "VD",
+          "DirectDelivery": "false",
+          "IntShipEligible": "1"
+        },
+        "OtherInfo": {
+          "BeanType": "ProductBean",
+          "AutomotiveDivision": "false",
+          "NewBundleExperience": "No"
+        }
+      },
+      {
+        "Id": {
+          "PartNumber": "007VA78942512P",
+          "CatEntryId": "44839270",
+          "MfgPartNumber": "WS5MT78061MI"
+        },
+        "Description": {
+          "Name": "Metaphor Women's Heathered Knit Blazer",
+          "BrandName": "Metaphor",
+          "ImageURL": "http://c.shld.net/rpx/i/s/i/spin/image/spin_prod_1154389512",
+          "PbType": "VARIATION",
+          "ReviewRating": {}
+        },
+        "Price": {
+          "DisplayPrice": "24.99",
+          "ClearanceIndicator": "0",
+          "PromoInd": "1",
+          "IsZipCodeRequired": "false",
+          "ShowAKHIMessage": "true"
+        },
+        "Availability": {
+          "StockIndicator": "1",
+          "Source": "Online",
+          "SpuInd": "true",
+          "StsType": "DRES",
+          "ResInd": "1",
+          "FreeShippingEligible": "True",
+          "FreeShippingThreshold": "59"
+        },
+        "SellerInfo": {
+          "StoreOrigin": "S",
+          "SellerCount": "1"
+        },
+        "Fulfillment": {
+          "DefaultFullfillment": "TW",
+          "DirectDelivery": "false"
+        },
+        "OtherInfo": {
+          "BeanType": "ProductBean",
+          "AutomotiveDivision": "false",
+          "NewBundleExperience": "No"
+        }
+      },
+      {
+        "Id": {
+          "PartNumber": "042VA78958812P",
+          "CatEntryId": "2996655",
+          "MfgPartNumber": "414M30AD"
+        },
+        "Description": {
+          "Name": "Adam Levine Fitted Blazer",
+          "BrandName": "Adam Levine",
+          "ImageURL": "http://c.shld.net/rpx/i/s/i/spin/image/spin_prod_1158130512",
+          "PbType": "VARIATION",
+          "ReviewRating": {}
+        },
+        "Price": {
+          "CutPrice": "59.99",
+          "DisplayPrice": "23.99",
+          "ClearanceIndicator": "0",
+          "PromoInd": "1",
+          "IsZipCodeRequired": "false",
+          "ShowAKHIMessage": "true"
+        },
+        "Availability": {
+          "SaleIndicator": "1",
+          "StockIndicator": "1",
+          "Source": "Online",
+          "SpuInd": "true",
+          "ResInd": "1",
+          "FreeShippingEligible": "True",
+          "FreeShippingThreshold": "59"
+        },
+        "SellerInfo": {
+          "StoreOrigin": "K",
+          "SellerCount": "1"
+        },
+        "Fulfillment": {
+          "IntShipEligible": "1"
+        },
+        "OtherInfo": {
+          "BeanType": "ProductBean",
+          "AutomotiveDivision": "false",
+          "NewBundleExperience": "No"
+        }
+      },
+      {
+        "Id": {
+          "PartNumber": "3ZZVA78684512P",
+          "CatEntryId": "44817474",
+          "MfgPartNumber": "UF-73LL"
+        },
+        "Description": {
+          "Name": "UNITED FACE Womens Leather One Button Lambskin Blazer",
+          "BrandName": "UNITED FACE",
+          "ImageURL": "http://c.shld.net/rpx/i/s/i/spin/image/spin_prod_1131359612",
+          "PbType": "VARIATION",
+          "ReviewRating": {}
+        },
+        "Price": {
+          "CutPrice": "239.00",
+          "DisplayPrice": "144.99",
+          "ClearanceIndicator": "0",
+          "PromoInd": "1",
+          "IsZipCodeRequired": "false",
+          "ShowAKHIMessage": "true"
+        },
+        "Availability": {
+          "SaleIndicator": "1",
+          "StockIndicator": "1",
+          "Source": "Online",
+          "SpuInd": "true",
+          "StsType": "VRES",
+          "ResInd": "1",
+          "FreeShippingEligible": "True",
+          "FreeShippingThreshold": "59"
+        },
+        "SellerInfo": {
+          "StoreOrigin": "S",
+          "SellerCount": "1"
+        },
+        "Fulfillment": {
+          "DefaultFullfillment": "VD",
+          "DirectDelivery": "false",
+          "IntShipEligible": "1"
+        },
+        "OtherInfo": {
+          "BeanType": "ProductBean",
+          "AutomotiveDivision": "false",
+          "NewBundleExperience": "No"
+        }
+      }
+    ],
+    "FilterProducts": [
+      {
+        "FilterKey": "Brand",
+        "FilterValues": []
+      },
+      {
+        "FilterKey": "clearance",
+        "FilterValues": [
+          {
+            "Name": "Yes",
+            "FilterIndex": "0",
+            "ContentCount": "41"
+          }
+        ]
+      },
+      {
+        "FilterKey": "discount",
+        "FilterValues": []
+      },
+      {
+        "FilterKey": "freeDelivery",
+        "FilterValues": []
+      },
+      {
+        "FilterKey": "freeShipping",
+        "FilterValues": []
+      },
+      {
+        "FilterKey": "international_shipping",
+        "FilterValues": []
+      },
+      {
+        "FilterKey": "itemCondition",
+        "FilterValues": []
+      },
+      {
+        "FilterKey": "layAway",
+        "FilterValues": []
+      },
+      {
+        "FilterKey": "mailInRebate",
+        "FilterValues": []
+      },
+      {
+        "FilterKey": "new",
+        "FilterValues": []
+      },
+      {
+        "FilterKey": "offer",
+        "FilterValues": []
+      },
+      {
+        "FilterKey": "sale",
+        "FilterValues": [
+          {
+            "Name": "Yes",
+            "FilterIndex": "1",
+            "ContentCount": "178"
+          }
+        ]
+      },
+      {
+        "FilterKey": "sears_international",
+        "FilterValues": [
+          {
+            "Name": "YES",
+            "FilterIndex": "2",
+            "ContentCount": "201"
+          }
+        ]
+      },
+      {
+        "FilterKey": "shipping",
+        "FilterValues": []
+      },
+      {
+        "FilterKey": "shipVantage",
+        "FilterValues": []
+      },
+      {
+        "FilterKey": "spuEligible",
+        "FilterValues": [
+          {
+            "Name": "Yes",
+            "FilterIndex": "3",
+            "ContentCount": "73"
+          }
+        ]
+      },
+      {
+        "FilterKey": "storeOrigin",
+        "FilterValues": []
+      },
+      {
+        "FilterKey": "trustedSeller",
+        "FilterValues": []
+      }
+    ],
+    "FilterRanks": [
+      {
+        "Name": "Brand",
+        "Rank": "1"
+      },
+      {
+        "Name": "Price",
+        "Rank": "2"
+      },
+      {
+        "Name": "offer",
+        "Rank": "3"
+      },
+      {
+        "Name": "discount",
+        "Rank": "4"
+      },
+      {
+        "Name": "Promotions",
+        "Rank": "5"
+      },
+      {
+        "Name": "clearance",
+        "Rank": "99"
+      },
+      {
+        "Name": "freeDelivery",
+        "Rank": "99"
+      },
+      {
+        "Name": "freeShipping",
+        "Rank": "99"
+      },
+      {
+        "Name": "international_shipping",
+        "Rank": "99"
+      },
+      {
+        "Name": "itemCondition",
+        "Rank": "99"
+      },
+      {
+        "Name": "layAway",
+        "Rank": "99"
+      },
+      {
+        "Name": "mailInRebate",
+        "Rank": "99"
+      },
+      {
+        "Name": "new",
+        "Rank": "99"
+      },
+      {
+        "Name": "sale",
+        "Rank": "99"
+      },
+      {
+        "Name": "sears_international",
+        "Rank": "99"
+      },
+      {
+        "Name": "shipping",
+        "Rank": "99"
+      },
+      {
+        "Name": "shipVantage",
+        "Rank": "99"
+      },
+      {
+        "Name": "spuEligible",
+        "Rank": "99"
+      },
+      {
+        "Name": "trustedSeller",
+        "Rank": "99"
+      },
+      {
+        "Name": "Rating",
+        "Rank": "995"
+      },
+      {
+        "Name": "storeOrigin",
+        "Rank": "996"
+      },
+      {
+        "Name": "filterShipping",
+        "Rank": "997"
+      },
+      {
+        "Name": "condition",
+        "Rank": "998"
+      },
+      {
+        "Name": "rebate",
+        "Rank": "999"
+      }
+    ],
+    "Categories": [
+      {
+        "ProdCountAggr": "267",
+        "KeyWord": "blazer",
+        "Name": "Clothing, Shoes & Jewelry",
+        "Category": "Clothing, Shoes & Jewelry"
+      },
+      {
+        "ProdCountAggr": "5",
+        "KeyWord": "blazer",
+        "Name": "Home",
+        "Category": "Home"
+      },
+      {
+        "ProdCountAggr": "4",
+        "KeyWord": "blazer",
+        "Name": "Fitness & Sports",
+        "Category": "Fitness & Sports"
+      }
+    ],
+    "Status": {
+      "ResponseCode": "0",
+      "RespMessage": "Successful"
+    },
+    "ApiTracking": "Server: PROD-SERVER-401-2|Tracking ID: {1422059330839}|API Client Session Key: 6296698295223444578|Time : Fri Jan 23 18:28:51 CST 2015|UID : 6296698295223444578|From Cache : Y"
+  }
+}

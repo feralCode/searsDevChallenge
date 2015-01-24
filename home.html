@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Required meta tags-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <!-- Your app title -->
+    <title>My App</title>
+    <!-- Path to Framework7 Library CSS-->
+    <link rel="stylesheet" href="css/framework7.css">
+    <!-- Path to your custom app styles-->
+    <link rel="stylesheet" href="css/my-app.css">
+
+    <link rel="stylesheet" href="css/circle_loader.css">
+    
+
+    <link href='http://fonts.googleapis.com/css?family=Roboto:500,900italic,900,400italic,100,200,700italic,300,700,500italic,100italic,300italic,400' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic' rel='stylesheet' type='text/css'>
+  </head>
+  <body>
+
+    <!-- Status bar overlay for full screen mode (PhoneGap) -->
+    <div class="statusbar-overlay"></div>
+    <!-- Views -->
+    <div class="views">
+    <!-- Your main view, should have "view-main" class -->
+    <div class="view view-main">
+        <video style="width:250px;height:250px;position:fixed;bottom:0;right:0;z-index:99;" 
+          id="my_webcam"
+          autoplay="autoplay"></video>
+
+        <!-- Pages -->
+        <div class="pages">
+          <!-- Home page -->
+          <div class="page" data-page="index">
+            <div class="page-content">
+
+              <div class="help_loader"></div>
+
+              <!--item list for complete listing -->
+              <div class="content-block-title">Item List</div>
+              <div class="list-block media-list" id="list_container">
+                  <div class="help_loader"></div>
+              </div>
+
+              <!-- Slider -->
+              <script id="itemPreviewTemplate" type="text/template7">
+              <div class="content-block-title">based off interest {{keyword}}</div>
+              <div class="slider-container">
+                <div class="slider-wrapper" id="preview_container">
+                  {{#each this.Products}}
+                    <div class="slider-slide">
+                      <div class="background" style="background-image: url('{{Description.ImageURL}}');"></div>
+                      <div class="item_title">{{Description.Name}}</div>
+                    </div>
+                  {{/each}}
+                </div>
+                <div class="slider-pagination"></div>
+              </div>
+              </script>
+              <script id="itemListTemplate" type="text/template7">
+                <li class="item-divider">{{keyword}}</li>
+                  {{#each this.Products}}
+                  <li class="item-link item-content" data-item-index="0">
+                    <div class="background" style="background-image: url('{{Description.ImageURL}}');"></div>
+                    <div class="item-media">
+                      <img src="{{Description.ImageURL}}">
+                    </div>
+                    <div class="item-inner">
+                      <div class="item-title-row">
+                        <div class="item_title">{{Description.Name}}</div>
+                      </div>
+                      <div class="item_price">
+                        <span class="smalls">$</span>{{dollars}}<span class="smalls">{{cents}}</span>
+                      </div>
+                    </div>
+                  </li>
+                  {{/each}}
+              </script>
+
+              
+               
+ 
+            </div>
+          </div>
+ 
+          <!-- About page -->
+          <div class="page cached" data-page="detail">
+            <div class="page-content">
+              <p>About page</p>
+            </div>
+          </div>
+ 
+          <!-- Services page -->
+          <div class="page cached" data-page="searh">
+            <div class="page-content">
+              <p>Services page</p>
+            </div>
+          </div>
+
+          <!-- Services page -->
+          <div class="page cached" data-page="cart">
+            <div class="page-content">
+              <p>Services page</p>
+            </div>
+          </div>
+
+        </div>
+
+
+
+        <!-- Bottom Toolbar-->
+        <div class="toolbar">
+          <div class="toolbar-inner">
+            <!-- Toolbar links -->
+            <a href="#" class="link">Link 1</a>
+            <a href="#" class="link">Link 2</a>
+          </div>
+        </div>
+
+    </div><!--end of view-main-->
+    </div><!--end of views-->
+
+    <script type="text/javascript" src="//cdn.temasys.com.sg/adapterjs/0.10.x/adapter.min.js"></script>
+    <script src="http://cdn.peerjs.com/0.3/peer.js"></script>
+    <!-- cdn underscore js -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.7.0/underscore-min.js"></script>
+    <!-- Path to Framework7 Library JS-->
+    <script type="text/javascript" src="js/framework7.min.js"></script>
+    <!-- Path to your app js-->
+    <script type="text/javascript" src="js/my-app.js"></script>
+  </body>
+</html> 
