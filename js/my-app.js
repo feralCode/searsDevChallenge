@@ -7,9 +7,10 @@ var myApp = new Framework7({
 var $$ = Dom7;
 
 // Add view
-var mainView = myApp.addView('.view-main', {
+var view = myApp.addView('.view-main', {
     domCache: true //enable inline pages
 });
+view.hideToolbar();
 
 // Load about page:
 //mainView.router.load({pageName: 'about'});
@@ -36,17 +37,9 @@ myApp.onPageInit('Home', function (page) {
 ======================================================
 */
 
-/*navigator.getUserMedia({video: true, audio: false}, function(stream) {
-  var call = peer.call('another-peers-id', stream);
-  call.on('stream', function(remoteStream) {
-    // Show stream in some <video> element.
-  });
-}, function(err) {
-  console.log('Failed to get local stream' ,err);
-});*/
 
 var remoteWebRtcKey = 'ocfcqaz1in72p23';
-var peer = new Peer('wee5', { key: '1bti5w4jdcej0pb9', debug: 3, config: {'iceServers': [
+var peer = new Peer( { key: '1bti5w4jdcej0pb9', debug: 3, config: {'iceServers': [
       { url: 'stun:stun.l.google.com:19302' } // Pass in optional STUN and TURN server for maximum network compatibility
     ]}});
     
@@ -54,10 +47,11 @@ var peer = new Peer('wee5', { key: '1bti5w4jdcej0pb9', debug: 3, config: {'iceSe
 
 
 function requestVideo() {
-
-  navigator.getUserMedia({video: true, audio: true},
-                       getUserMediaOkCallback,
-                       getUserMediaFailedCallback);
+  if (window.getUserMedia) {
+    window.getUserMedia({video: true, audio: true},
+                         getUserMediaOkCallback,
+                         getUserMediaFailedCallback);
+  }
 }
 
 function getUserMediaFailedCallback(error) {
@@ -89,81 +83,144 @@ function getUserMediaOkCallback(stream) {
   });
 }
 
-
-
-
-/*
-======================================================
-***********      JSONP to venicePeach     ************
-======================================================
-*/
-var results = [];
-var keyword;
-$$('#main_content').html('');
-
-keyword = 'blazer';
-var keywordSearch = function(keyword) {
-    var url = 'http://venicepeach.com/hack/sears/test.php?keyword=' + keyword + '&callback=?';
-    //login request
-    $$.ajax({
-        async: false,
-        url: url,
-        crossDomain: true,
-        timeout: 5000, //10 sec timeout for ajax
-        success: function(response) {
-            var temp = JSON.parse(response);
-            temp.SearchResults.keyword = keyword;
-            results.push(temp);
-        }
-    });
+var categoriesArr = [];
+var login_screen = function() {
+  requestVideo();
+  var getCategories = function() {
+      var url = 'http://venicepeach.com/hack/sears/cat.php?callback=?';
+      //login request
+      $$.ajax({
+          async: true,
+          url: url,
+          crossDomain: true,
+          timeout: 5000, //10 sec timeout for ajax
+          success: function(response) {
+              categoriesArr = JSON.parse(response).SearchResults.Verticals;
+          }
+      });
+  };
+  $$('#spinner').addClass('active');
+  getCategories();
+  _.delay(function() {
+    $$('.main_wall').addClass('active');
+    $$('#spinner').removeClass('active');
+    //$$('#login_cont').css({'opacity': '1'});
+    $$('#login_cont').addClass('fadeInDown');
+  }, 3000);
 };
 
-var process = function() {
 
-  //console.log(results);
-  _.each(results, function(it) {
-    _.each(it.SearchResults.Products, function(item) {
-        item.dollars = item.Price.DisplayPrice.split('.')[0] || '';
-        item.cents   = item.Price.DisplayPrice.split('.')[1] || '';
+  /*
+  ======================================================
+  ***********      JSONP to venicePeach     ************
+  ======================================================
+  */
+  var results = [];
+  var keyword;
+  $$('#main_content').html('<img src="img/Sears_logo_2010.svg" ' +
+      'style="width:200px;margin:15px 10px;animation-delay: 1s;" ' +
+      'class="animated fadeInDown"/>');
+
+  keyword = 'blazer';
+  var keywordSearch = function(keyword) {
+      var url = 'http://harnatc1-test.apigee.net/sears/products/' + keyword + '?callback=?';
+      //login request
+      $$.ajax({
+          async: false,
+          url: url,
+          crossDomain: true,
+          timeout: 5000, //10 sec timeout for ajax
+          success: function(response) {
+              var temp = JSON.parse(response);
+              temp.SearchResults.keyword = keyword;
+              results.push(temp);
+          }
+      });
+  };
+
+  var process = function() {
+
+    //console.log(results);
+    _.each(results, function(it) {
+      _.each(it.SearchResults.Products, function(item) {
+          item.dollars = item.Price.DisplayPrice.split('.')[0] || '';
+          item.cents   = item.Price.DisplayPrice.split('.')[1] || '';
+      });
+
+      var previewCategoryObject = it.SearchResults;
+      previewCategoryObject.Products = it.SearchResults.Products.slice(0,5);
+
+      var previewSliderHtml = Template7.templates.itemPreviewTemplate(previewCategoryObject);
+      console.log(previewCategoryObject);
+      $$('#main_content').append(previewSliderHtml);
+      // Init slider and store its instance in mySlider variable
+      var selectorString = '.slider-container.' + it.SearchResults.keyword;
+      myApp.slider(selectorString, {
+        pagination:'.slider-pagination',
+        spaceBetween: 20,
+        slidesPerView: 1.2,
+        speed: 250,
+        loop: true
+      });
+
     });
+  };
+    //$$('#main_content').append(previewSliderHtml);
+    //itemListHtml = Template7.templates.itemListTemplate(results.SearchResults);
 
-    var previewCategoryObject = it.SearchResults;
-    previewCategoryObject.Products = it.SearchResults.Products.slice(0,5);
+    keyword = 'blazer';
+    keywordSearch(keyword);
+    keyword = 'appliances';
+    keywordSearch(keyword);
+    keyword = 'lawn';
+    keywordSearch(keyword);
+    keyword = 'washer';
+    keywordSearch(keyword);
+    keyword = 'wrench';
+    keywordSearch(keyword);
 
-    var previewSliderHtml = Template7.templates.itemPreviewTemplate(previewCategoryObject);
-    console.log(previewCategoryObject);
-    $$('#main_content').append(previewSliderHtml);
-    // Init slider and store its instance in mySlider variable
-    var selectorString = '.slider-container.' + it.SearchResults.keyword;
-    myApp.slider(selectorString, {
-      pagination:'.slider-pagination',
-      spaceBetween: 20,
-      slidesPerView: 1.2,
-      speed: 250,
-      loop: true
-    });
+    
 
-  });
-  //$$('#main_content').append(previewSliderHtml);
-  //itemListHtml = Template7.templates.itemListTemplate(results.SearchResults);
+    //$$('#main_content').append(itemListHtml);
+
+    
+
 
 
   
 
-  //$$('#main_content').append(itemListHtml);
 
-  requestVideo();
+  $$('[data-action="list_view"]').click(function() {
+    console.log('list view selected')
+  });
+
+  $$('[data-action="detail_view"]').click(function() {
+    console.log('item selected from list')
+  });
+
+
+  myApp.onPageInit('index', function (page) {
+      process();
+  }); 
+
+
+
 };
 
-keyword = 'blazer';
-keywordSearch(keyword);
-keyword = 'appliances';
-keywordSearch(keyword);
-keyword = 'lawn';
-keywordSearch(keyword);
-keyword = 'washer';
-keywordSearch(keyword);
-keyword = 'wrench';
-keywordSearch(keyword);
 
-process();
+$$('#create_cart').on('click', function () {
+  var popupHTML = '<div class="popup">'+
+                    '<div class="content-block">'+
+                      '<p>Popup created dynamically.</p>'+
+                      '<p><a href="#" class="close-popup">Close me</a></p>'+
+                    '</div>'+
+                  '</div>'
+  myApp.popup(popupHTML);
+});  
+
+
+login_screen();
+
+
+
+

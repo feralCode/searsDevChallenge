@@ -1,0 +1,191 @@
+{
+  "SearchResults": {
+    "Verticals": [
+      {
+        "VerticalName": "Appliances",
+        "VerticalUrlName": "/Appliances",
+        "VerticalUrl": "/en_US/appliances.html",
+        "CatGroupId": 1020003
+      },
+      {
+        "VerticalName": "Automotive",
+        "VerticalUrlName": "/Automotive",
+        "VerticalUrl": "/en_US/automotive.html",
+        "CatGroupId": 1020005
+      },
+      {
+        "VerticalName": "Baby",
+        "VerticalUrlName": "/Baby",
+        "VerticalUrl": "/en_US/baby.html",
+        "CatGroupId": 1020004
+      },
+      {
+        "VerticalName": "Beauty",
+        "VerticalUrlName": "/Beauty",
+        "VerticalUrl": "/en_US/beauty.html",
+        "CatGroupId": 1023303
+      },
+      {
+        "VerticalName": "Books & Magazines",
+        "VerticalUrlName": "/Books & Magazines",
+        "VerticalUrl": "/en_US/books-magazines.html",
+        "CatGroupId": 1029616
+      },
+      {
+        "VerticalName": "Clothing, Shoes & Jewelry",
+        "VerticalUrlName": "/Clothing, Shoes & Jewelry",
+        "VerticalUrl": "/en_US/clothing-shoes-jewelry.html",
+        "CatGroupId": 1325032343
+      },
+      {
+        "VerticalName": "Connected Solutions",
+        "VerticalUrlName": "/Connected Solutions",
+        "VerticalUrl": "/en_US/connected-solutions.html",
+        "CatGroupId": 1342036019
+      },
+      {
+        "VerticalName": "Fitness & Sports",
+        "VerticalUrlName": "/Fitness & Sports",
+        "VerticalUrl": "/en_US/fitness-sports.html",
+        "CatGroupId": 1020006
+      },
+      {
+        "VerticalName": "Food & Grocery",
+        "VerticalUrlName": "/Food & Grocery",
+        "VerticalUrl": "/en_US/food-grocery.html",
+        "CatGroupId": 1030488
+      },
+      {
+        "VerticalName": "Gift Registry",
+        "VerticalUrlName": "/Gift Registry",
+        "VerticalUrl": "/en_US/gift-registry.html",
+        "CatGroupId": 1036225
+      },
+      {
+        "VerticalName": "Gifts",
+        "VerticalUrlName": "/Gifts",
+        "VerticalUrl": "/en_US/gifts.html",
+        "CatGroupId": 1020009
+      },
+      {
+        "VerticalName": "Health & Wellness",
+        "VerticalUrlName": "/Health & Wellness",
+        "VerticalUrl": "/en_US/health-wellness.html",
+        "CatGroupId": 1024539
+      },
+      {
+        "VerticalName": "Home",
+        "VerticalUrlName": "/Home",
+        "VerticalUrl": "/en_US/home.html",
+        "CatGroupId": 1348654256
+      },
+      {
+        "VerticalName": "Home Improvement",
+        "VerticalUrlName": "/Home Improvement",
+        "VerticalUrl": "/en_US/home-improvement.html",
+        "CatGroupId": 1270629454
+      },
+      {
+        "VerticalName": "Home Services",
+        "VerticalUrlName": "/Home Services",
+        "VerticalUrl": "/en_US/home-services.html",
+        "CatGroupId": 1023816
+      },
+      {
+        "VerticalName": "Jewelry",
+        "VerticalUrlName": "/Jewelry",
+        "VerticalUrl": "/en_US/jewelry.html",
+        "CatGroupId": 1020008
+      },
+      {
+        "VerticalName": "Kids",
+        "VerticalUrlName": "/Kids",
+        "VerticalUrl": "/en_US/kids.html",
+        "CatGroupId": 1278422428
+      },
+      {
+        "VerticalName": "Lawn & Garden",
+        "VerticalUrlName": "/Lawn & Garden",
+        "VerticalUrl": "/en_US/lawn-garden.html",
+        "CatGroupId": 1020001
+      },
+      {
+        "VerticalName": "Local Services",
+        "VerticalUrlName": "/Local Services",
+        "VerticalUrl": "/local-services/b-1238522144",
+        "CatGroupId": 1238522144
+      },
+      {
+        "VerticalName": "Office Supplies",
+        "VerticalUrlName": "/Office Supplies",
+        "VerticalUrl": "/en_US/office-supplies.html",
+        "CatGroupId": 1319505823
+      },
+      {
+        "VerticalName": "Outdoor Living",
+        "VerticalUrlName": "/Outdoor Living",
+        "VerticalUrl": "/en_US/outdoor-living.html",
+        "CatGroupId": 1024037
+      },
+      {
+        "VerticalName": "PartsDirect Parts",
+        "VerticalUrlName": "/PartsDirect Parts",
+        "VerticalUrl": "/partsdirect-parts/b-1036502",
+        "CatGroupId": 1036502
+      },
+      {
+        "VerticalName": "Pet Supplies",
+        "VerticalUrlName": "/Pet Supplies",
+        "VerticalUrl": "/en_US/pet-supplies.html",
+        "CatGroupId": 1029162
+      },
+      {
+        "VerticalName": "Seasonal",
+        "VerticalUrlName": "/Seasonal",
+        "VerticalUrl": "/en_US/seasonal.html",
+        "CatGroupId": 1100099
+      },
+      {
+        "VerticalName": "Shipping",
+        "VerticalUrlName": "/Shipping",
+        "VerticalUrl": "/shipping/b-1022999",
+        "CatGroupId": 1022999
+      },
+      {
+        "VerticalName": "Tools",
+        "VerticalUrlName": "/Tools",
+        "VerticalUrl": "/en_US/tools.html",
+        "CatGroupId": 1020000
+      },
+      {
+        "VerticalName": "Toys & Games",
+        "VerticalUrlName": "/Toys & Games",
+        "VerticalUrl": "/en_US/toys-games.html",
+        "CatGroupId": 1020010
+      },
+      {
+        "VerticalName": "Trends",
+        "VerticalUrlName": "/Trends",
+        "VerticalUrl": "/en_US/trends.html",
+        "CatGroupId": 1202530554
+      },
+      {
+        "VerticalName": "TVs & Electronics",
+        "VerticalUrlName": "/TVs & Electronics",
+        "VerticalUrl": "/en_US/tvs-electronics.html",
+        "CatGroupId": 1231469010
+      },
+      {
+        "VerticalName": "Workwear & Uniforms",
+        "VerticalUrlName": "/Workwear & Uniforms",
+        "VerticalUrl": "/en_US/workwear-uniforms.html",
+        "CatGroupId": 1024801
+      }
+    ],
+    "Status": {
+      "ResponseCode": "0",
+      "RespMessage": "Successful"
+    },
+    "ApiTracking": "Server: PROD-SERVER-404-2|Tracking ID: {1422201317545}|API Client Session Key: 1117195987567589129|Time : Sun Jan 25 09:55:17 CST 2015|UID : 1117195987567589129|From Cache : N"
+  }
+}
