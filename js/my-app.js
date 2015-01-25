@@ -38,7 +38,7 @@ myApp.onPageInit('Home', function (page) {
 */
 
 
-var remoteWebRtcKey = 'ocfcqaz1in72p23';
+var remoteWebRtcKey = 'bobby';
 var peer = new Peer( { key: '1bti5w4jdcej0pb9', debug: 3, config: {'iceServers': [
       { url: 'stun:stun.l.google.com:19302' } // Pass in optional STUN and TURN server for maximum network compatibility
     ]}});
@@ -48,7 +48,7 @@ var peer = new Peer( { key: '1bti5w4jdcej0pb9', debug: 3, config: {'iceServers':
 
 function requestVideo() {
   if (window.getUserMedia) {
-    window.getUserMedia({video: true, audio: true},
+    window.getUserMedia({video: true, audio: false},
                          getUserMediaOkCallback,
                          getUserMediaFailedCallback);
   }
@@ -59,8 +59,9 @@ function getUserMediaFailedCallback(error) {
 }
 
 function getUserMediaOkCallback(stream) {
+  window.localStream = stream;
   // Call the polyfill wrapper to attach the media stream to this element.
-  //attachMediaStream(document.getElementById("video_chat"), stream);
+  attachMediaStream(document.getElementById("video_chat"), stream);
 
   var call = peer.call(remoteWebRtcKey, stream);
 
@@ -68,14 +69,12 @@ function getUserMediaOkCallback(stream) {
     // `stream` is the MediaStream of the remote peer.
     // Here you'd add it to an HTML video/canvas element.
     //$$('#video_chat').prop('src', URL.createObjectURL(remoteStream));
-    $$('#video_chat').show();
-    attachMediaStream(document.getElementById("video_chat"), remoteStream);
+
+    window.remoteStream = remoteStream;
+    attachMediaStream(document.getElementById("video_review"), remoteStream);
     //$$('#video_chat').prop('src', URL.createObjectURL(remoteStream));
   });
 
-  $$('#video_chat').click(function() {
-    this.toggle();
-  });
 
   peer.on('call', function(call) {
     // Answer the call, providing our mediaStream
@@ -100,15 +99,15 @@ var login_screen = function() {
       });
   };
 
-  keyword = 'blazers';
+  keyword = 'washer';
   keywordSearch(keyword);
-  keyword = 'appliances';
+  keyword = 'blazers';
   keywordSearch(keyword);
   keyword = 'lawn';
   keywordSearch(keyword);
-  keyword = 'washer';
-  keywordSearch(keyword);
   keyword = 'wrenchs';
+  keywordSearch(keyword);
+  keyword = 'appliances';
   keywordSearch(keyword);
 
 
@@ -151,13 +150,17 @@ var login_screen = function() {
   };
 
   var process = function() {
-
-    //console.log(results);
-    _.each(results, function(it) {
+    $$('#main_content').html('<img src="img/Sears_logo_2010.svg" ' +
+      'style="width:200px;margin:15px 10px;animation-delay: 1s;" ' +
+      'class="animated fadeInDown"/>');
+    console.log(results);
+    _.each(results, function(it, index) {
+        it.SearchResults.index = index;
       _.each(it.SearchResults.Products, function(item) {
           item.dollars = item.Price.DisplayPrice.split('.')[0] || '';
           item.cents   = item.Price.DisplayPrice.split('.')[1] || '';
       });
+
 
       var previewCategoryObject = it.SearchResults;
       previewCategoryObject.Products = it.SearchResults.Products.slice(0,5);
@@ -165,7 +168,8 @@ var login_screen = function() {
       var previewSliderHtml = Template7.templates.itemPreviewTemplate(previewCategoryObject);
       //console.log(previewCategoryObject);
       //
-      datString += previewSliderHtml;
+      //datString += previewSliderHtml;
+      $$('#main_content').append(previewSliderHtml);
       // Init slider and store its instance in mySlider variable
       var selectorString = '.slider-container.' + it.SearchResults.keyword;
       myApp.slider(selectorString, {
@@ -177,15 +181,10 @@ var login_screen = function() {
       });
 
     });
-    _.delay(function() {
-      $$('#main_content').html('<img src="img/Sears_logo_2010.svg" ' +
-      'style="width:200px;margin:15px 10px;animation-delay: 1s;" ' +
-      'class="animated fadeInDown"/>');
-      $$('#main_content').append(datString);
-    }, 2000);
+
+
     //$$('#main_content').append(previewSliderHtml);
-    var itemListHtml = Template7.templates.itemListTemplate(results[0].SearchResults);
-    $$('list_content').html(itemListHtml);
+    
     
   };
     
@@ -199,32 +198,95 @@ var login_screen = function() {
   
 
   myApp.onPageInit('index', function (page) {
-      _.defer(process());
+      _.delay(process(), 1500);
 
-      $$('[data-action="list_view"]').click(function() {
-        console.log('list view selected')
-      });
+      
 
       $$('[data-action="detail_view"]').click(function() {
         console.log('item selected from list')
+
+
       });
 
+      $$('[data-action="list_view"]').click(function() {
+      var itemListHtml = '<div class="list_title back" style="color:#666;font-size:40px;"><a href="index" class="back"><i class="ion-chevron-left"></i> BACK<a/></div>';
+  
+      console.log('list view selected');
+      var index = $$(this).attr('data-item-index');
+      index = parseInt(index);
+
+      console.log(index);
+      console.log(results[index].SearchResults);
+      itemListHtml += Template7.templates.itemListTemplate(results[index].SearchResults);
+      $$('#list_content').html(itemListHtml);
+
+    });
+
+    $$('#close').click(function(){
+      $$('#video_chat').hide();
+      $$('#video_review').hide();
+      $$('#close').hide();
+    });
+
+    
 
   }); 
+
+    
+
+
 
 
 
 $$('#create_cart').on('click', function () {
   var popupHTML = '<div class="popup">'+
                     '<div class="content-block">'+
-                      '<p>Popup created dynamically.</p>'+
-                      '<p><a href="#" class="close-popup">Close me</a></p>'+
-                    '</div>'+
-                  '</div>'
+                      '<div style="color:#666;font-size:40px;" class="close-popup content-block-title">back</div>'+
+                        '<div class="list-block">'+
+                         ' <ul>'+
+                           ' <li class="item-content">'+
+                             ' <div class="item-inner">'+
+                                '<div class="item-title">Item 1</div>'+
+                             ' </div>'+
+                            '</li>'+
+                            '<li class="item-content">'+
+                              '<div class="item-inner">'+
+                                '<div class="item-title">Item with badge</div>'
+                              '</div>'+
+                            '</li>'+
+                            '<li class="item-content">'+
+                              '<div class="item-inner">'+
+                                '<div class="item-title">Another item</div>'+
+                              '</div>'+
+                            '</li>'+
+                          '</ul>' +
+                        '</div>'+
+                  '</div>';
   myApp.popup(popupHTML);
 });  
 
+
+
+
+
+$$('#open_vid').on('click', function () {
+  $$('#video_review').hide();
+  $$('#video_chat').show();
+  $$('#close').show();
+  //attachMediaStream(document.getElementById("video_chat"), window.remoteStream);
+});  
+
+$$('#leave_rev').on('click', function () {
+  $$('#video_review').show();
+  $$('#video_chat').hide();
+  $$('#close').show();
+  //attachMediaStream(document.getElementById("video_chat"), window.localStream);
+});  
+
+
 _.delay(login_screen(), 2000);
+
+
 
 
 
