@@ -99,8 +99,21 @@ var login_screen = function() {
           }
       });
   };
+
+  keyword = 'blazers';
+  keywordSearch(keyword);
+  keyword = 'appliances';
+  keywordSearch(keyword);
+  keyword = 'lawn';
+  keywordSearch(keyword);
+  keyword = 'washer';
+  keywordSearch(keyword);
+  keyword = 'wrenchs';
+  keywordSearch(keyword);
+
+
   $$('#spinner').addClass('active');
-  getCategories();
+  //getCategories();
   _.delay(function() {
     $$('.main_wall').addClass('active');
     $$('#spinner').removeClass('active');
@@ -116,14 +129,13 @@ var login_screen = function() {
   ======================================================
   */
   var results = [];
+  var datString = '';
   var keyword;
-  $$('#main_content').html('<img src="img/Sears_logo_2010.svg" ' +
-      'style="width:200px;margin:15px 10px;animation-delay: 1s;" ' +
-      'class="animated fadeInDown"/>');
+  
 
   keyword = 'blazer';
   var keywordSearch = function(keyword) {
-      var url = 'http://harnatc1-test.apigee.net/sears/products/' + keyword + '?callback=?';
+      var url = 'http://venicepeach.com/hack/sears/test.php?keyword=' + keyword + '&callback=?';
       //login request
       $$.ajax({
           async: false,
@@ -151,8 +163,9 @@ var login_screen = function() {
       previewCategoryObject.Products = it.SearchResults.Products.slice(0,5);
 
       var previewSliderHtml = Template7.templates.itemPreviewTemplate(previewCategoryObject);
-      console.log(previewCategoryObject);
-      $$('#main_content').append(previewSliderHtml);
+      //console.log(previewCategoryObject);
+      //
+      datString += previewSliderHtml;
       // Init slider and store its instance in mySlider variable
       var selectorString = '.slider-container.' + it.SearchResults.keyword;
       myApp.slider(selectorString, {
@@ -164,48 +177,41 @@ var login_screen = function() {
       });
 
     });
-  };
+    _.delay(function() {
+      $$('#main_content').html('<img src="img/Sears_logo_2010.svg" ' +
+      'style="width:200px;margin:15px 10px;animation-delay: 1s;" ' +
+      'class="animated fadeInDown"/>');
+      $$('#main_content').append(datString);
+    }, 2000);
     //$$('#main_content').append(previewSliderHtml);
-    //itemListHtml = Template7.templates.itemListTemplate(results.SearchResults);
-
-    keyword = 'blazer';
-    keywordSearch(keyword);
-    keyword = 'appliances';
-    keywordSearch(keyword);
-    keyword = 'lawn';
-    keywordSearch(keyword);
-    keyword = 'washer';
-    keywordSearch(keyword);
-    keyword = 'wrench';
-    keywordSearch(keyword);
+    var itemListHtml = Template7.templates.itemListTemplate(results[0].SearchResults);
+    $$('list_content').html(itemListHtml);
+    
+  };
+    
+    
 
     
 
     //$$('#main_content').append(itemListHtml);
 
-    
-
-
 
   
 
-
-  $$('[data-action="list_view"]').click(function() {
-    console.log('list view selected')
-  });
-
-  $$('[data-action="detail_view"]').click(function() {
-    console.log('item selected from list')
-  });
-
-
   myApp.onPageInit('index', function (page) {
-      process();
+      _.defer(process());
+
+      $$('[data-action="list_view"]').click(function() {
+        console.log('list view selected')
+      });
+
+      $$('[data-action="detail_view"]').click(function() {
+        console.log('item selected from list')
+      });
+
+
   }); 
 
-
-
-};
 
 
 $$('#create_cart').on('click', function () {
@@ -218,8 +224,8 @@ $$('#create_cart').on('click', function () {
   myApp.popup(popupHTML);
 });  
 
+_.delay(login_screen(), 2000);
 
-login_screen();
 
 
 

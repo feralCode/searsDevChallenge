@@ -156,7 +156,7 @@
           <!-- Home page -->
           <div class="page cached" data-page="index">
             <div class="page-content" id="main_content">
-              <div id="spinner" class="">
+              <div id="spinner" class="active">
                   <span id="ball_1" class="spinner_ball"></span>
                   <span id="ball_2" class="spinner_ball"></span>
                   <span id="ball_3" class="spinner_ball"></span>
@@ -169,7 +169,7 @@
               <div class="content-block">
                 <div class="row">
                   <div class="col-60 list_title">{{this.keyword}}</div>
-                  <div class="col-40"><a href="#" class="button button-fill color-red">View All</a></div>
+                  <div class="col-40"><a href="#list" class="button button-fill color-red">View All</a></div>
                 </div>
               </div>
               <div class="slider-container {{this.keyword}}">
@@ -226,9 +226,14 @@
               </script>
     
           <!-- About page -->
-          <div class="page cached" data-page="detail">
-            <div class="page-content">
-              <p>About page</p>
+          <div class="page cached" data-page="list">
+            <div class="page-content" id="list_content">
+              <div id="spinner" class="">
+                  <span id="ball_1" class="spinner_ball"></span>
+                  <span id="ball_2" class="spinner_ball"></span>
+                  <span id="ball_3" class="spinner_ball"></span>
+              </div>
+
             </div>
           </div>
  
@@ -255,7 +260,7 @@
           <div class="toolbar-inner">
             <!-- Toolbar links -->
             <a href="#" class="link">Link 1</a>
-            <a href="#" class="link" id="create_cart">Cart()</a>
+            <a href="#" class="link" id="create_cart">Cart(0)</a>
           </div>
         </div>
 
